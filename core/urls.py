@@ -15,8 +15,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # Own app
+    path('restaurant/', include('restaurant.urls')),
+    # Third apps
+    # This adds REST framework's login and logout views to use the browsable API 
+    path('api-auth/', include('rest_framework.urls'))
 ]
