@@ -85,11 +85,11 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+    'SQLite': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     },
-    'MySQL': {   
+    'default': {   
         'ENGINE': 'django.db.backends.mysql',   
         'NAME': os.getenv('DB_NAME'), 
         'USER': os.getenv('DB_USER'),
@@ -99,7 +99,7 @@ DATABASES = {
         'OPTIONS': {   
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"   
         } 
-    }
+    },
 }
 
 # MEDIA_URL = '/media/'
