@@ -27,7 +27,7 @@ menus, update menus, and access various functionalities through the browsable AP
 - Pipenv: Install using `pip install pipenv`
 - MySQL (optional)
 
-_Note:_ By default, the project is configured to use MySQL as the database. If
+_**Note:**_ By default, the project is configured to use MySQL as the database. If
 you prefer to use SQLite, follow the steps in _settings.py_.
 
 ### Local setup
@@ -46,7 +46,7 @@ you prefer to use SQLite, follow the steps in _settings.py_.
    pipenv install
    ```
 
-4. Read the Note above this instrucions, and after that run:
+4. Read the _**note**_ above this instrucions, and after that run:
    ```
    python manage.py makemigrations
    python manage.py migrate
