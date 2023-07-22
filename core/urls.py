@@ -16,12 +16,21 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from restaurant import views
+
+router = DefaultRouter()
+router.register(r'tables', views.BookingViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # Own app
+    # Restaurant Little Lemon app
+    path('restaurant/booking/', include(router.urls)),
     path('restaurant/', include('restaurant.urls')),
-    # Third apps
     # This adds REST framework's login and logout views to use the browsable API 
-    path('api-auth/', include('rest_framework.urls'))
+    path('api-auth/', include('rest_framework.urls'), name="rest_framework"),
+    # Add auth/users/ endpoints
+    path('auth/', include('djoser.urls')),
+    # Add /token/login and logout endpoints
+    path('auth/', include('djoser.urls.authtoken'))
 ]
