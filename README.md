@@ -34,7 +34,7 @@ you prefer to use SQLite, follow the steps in _settings.py_.
 
 1. Clone the repo and cd into the project:
    ```
-   git clone https://github.com/
+   git clone https://github.com/doteins/lemon-bistro-api.git
    cd table-booking-menu-management
    ```
 
