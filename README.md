@@ -24,7 +24,7 @@ menus, update menus, and access various functionalities through the browsable AP
 ### Prerequisites
 
 - Python 3.x
-- Pipenv: `pip install pipenv`
+- Pipenv: Install using `pip install pipenv`
 - MySQL (optional)
 
 _Note:_ By default, the project is configured to use MySQL as the database. If
