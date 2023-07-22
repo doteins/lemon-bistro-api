@@ -46,7 +46,7 @@ you prefer to use SQLite, follow the steps in _settings.py_.
    pipenv install
    ```
 
-4. Read the _**note**_ above this instrucions, and after that run:
+4. Read the _**note**_ above this instrucions, and after updating the file run:
    ```
    python manage.py makemigrations
    python manage.py migrate
