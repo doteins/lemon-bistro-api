@@ -85,12 +85,12 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    # Change this SQLite name to default to use SQLite
+    # 👇 Change the line below to 'default'
     'SQLite': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     },
-    # And set this to any other name you like, MySQL for example
+    # And comment this whole (object) part of code below
     'default': {   
         'ENGINE': 'django.db.backends.mysql',   
         'NAME': os.getenv('DB_NAME'), 
