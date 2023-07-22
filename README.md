@@ -1,4 +1,4 @@
-# Table Booking and Menu Management API
+# Table Reservations & Menus API
 
 ## Description
 
@@ -7,9 +7,15 @@ menus, update menus, and access various functionalities through the browsable AP
 
 ## API endpoints
 
+**Superuser Account:**
+You can log in to the admin panel with the following credentials:
+
+- **URL:** /admin
+- **Username:** admin
+- **Password:** lemon@789!
+
 | Endpoint | Method |
 | ------------ | :-----------: |
-| /admin    |   user: _admin_, password: _lemon@789!_  |
 | /restaurant    |   GET |
 | /restaurant/menu     |   GET - POST   |
 | /restaurant/menu/id  |   GET - PUT - DELETE   |
@@ -27,7 +33,7 @@ menus, update menus, and access various functionalities through the browsable AP
 - Pipenv: Install using `pip install pipenv`
 - MySQL (optional)
 
-_**Note:**_ By default, the project is configured to use MySQL as the database. If
+_**Note:**_ This project is configured to use MySQL as the database. If
 you prefer to use SQLite, follow the steps in _settings.py_.
 
 ### Local setup
@@ -35,7 +41,7 @@ you prefer to use SQLite, follow the steps in _settings.py_.
 1. Clone the repo and cd into the project:
    ```
    git clone https://github.com/doteins/lemon-bistro-api.git
-   cd table-booking-menu-management
+   cd lemon-bistro-api
    ```
 
 2. Check out and follow the instructions in the _.env.example_ file.
