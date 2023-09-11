@@ -40,7 +40,7 @@ you prefer to use SQLite, follow the steps in _settings.py_.
 
 1. Clone the repo and cd into the project:
    ```
-   git clone https://github.com/doteins/lemon-bistro-api.git
+   git clone https://github.com/yeroldsan/lemon-bistro-api.git
    cd lemon-bistro-api
    ```
 
